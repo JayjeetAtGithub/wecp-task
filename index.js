@@ -1,13 +1,13 @@
 const { TestCaseGenerator } = require('./lib');
 
 const input_generator_one = function() {
-            const arr_len = this.get_rand(
+            const arr_len = TestCaseGenerator.get_rand(
                     this.constraints.lower_bound_arr_len,
                     this.constraints.upper_bound_arr_len);
 
             let arr_elements = new Array();
             for (let i = 0; i < arr_len; i++) {
-                    arr_elements.push(this.get_rand(
+                    arr_elements.push(TestCaseGenerator.get_rand(
                             this.constraints.lower_bound_arr_elem, 
                             this.constraints.upper_bound_arr_elem)
                     );
@@ -18,7 +18,7 @@ const input_generator_one = function() {
         }
 
 const input_generator_two = function() {
-            const num = this.get_rand(
+            const num = TestCaseGenerator.get_rand(
                     this.constraints.lower_bound_num,
                     this.constraints.upper_bound_num);
             

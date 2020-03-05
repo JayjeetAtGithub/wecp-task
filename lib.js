@@ -23,7 +23,7 @@ class TestCaseGenerator {
         }
 
         // method to generate a random number in a given range
-        get_rand(min, max) {
+        static get_rand(min, max) {
                 min = Math.ceil(min);
                 max = Math.floor(max);
                 return Math.floor(Math.random() * (max - min + 1)) + min; 
