@@ -102,7 +102,7 @@ class TestCaseGeneratorTypeTwo extends TestCaseGenerator {
 
 // test
 let test_case_generator_type_one = new TestCaseGeneratorTypeOne(
-        "./sample_program_one",
+        "./bin/sample_program_one",
         "./input_one.txt",
         "./output_one.txt",
         10,
@@ -115,7 +115,7 @@ let test_case_generator_type_one = new TestCaseGeneratorTypeOne(
 )
 
 let test_case_generator_type_two = new TestCaseGeneratorTypeTwo(
-        "./sample_program_two",
+        "./bin/sample_program_two",
         "./input_two.txt",
         "./output_two.txt",
         5,
