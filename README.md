@@ -43,15 +43,13 @@ let test_case_generator = new TestCaseGenerator(
     "<path/to/test case input file>",
     "<path/to/test case output file>",
     input_generator_function,
-    number_of_test_cases_to_generate,
-    constraint_object
-)
+    number_of_test_cases_to_generate)
 ```
 
 3. Call the `generate` method.
 
 ```js
-test_case_generator.generate();
+test_case_generator.generate()
 ```
 
 ## Generated test case files for the sample programs
