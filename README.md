@@ -1,6 +1,8 @@
 # test case generator
 
-## Running instructions:
+## Running instructions
+
+> NOTE: Make sure `node` and `g++` is installed.
 
 1. Clone the repository.
 ```
@@ -20,6 +22,6 @@ g++ example/sample_program_two.cpp -o bin/sample_program_two
 node index.js
 ```
 
-## Generated test cases files:
+## Generated test cases files
 * `input_one.txt`, `output_one.txt` : Test cases for `example/sample_program_one.cpp`.
 * `input_two.txt`, `output_two.txt` : Test cases for `example/sample_program_two.cpp`.
