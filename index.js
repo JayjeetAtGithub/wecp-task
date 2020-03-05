@@ -14,7 +14,6 @@ const input_generator_one = function() {
             }
             
             const input_string = arr_len.toString() + " " + arr_elements.join(" ");
-            this.inputs.push(input_string);
             return input_string;
         }
 
@@ -24,7 +23,6 @@ const input_generator_two = function() {
                     this.constraints.upper_bound_num);
             
             const input_string = num.toString();
-            this.inputs.push(input_string);
             return input_string;
 }
 

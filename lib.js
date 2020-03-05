@@ -18,9 +18,6 @@ class TestCaseGenerator {
                 this.num_test_cases = num_test_cases
                 this.constraints = constraints
 
-                this.inputs = new Array();
-                this.outputs = new Array();
-
                 fs.closeSync(fs.openSync(this.path_to_input_file, 'w'));
                 fs.closeSync(fs.openSync(this.path_to_output_file, 'w'));
         }
@@ -36,7 +33,6 @@ class TestCaseGenerator {
         generate_output(input_string) {
                 const proc = spawnSync(this.path_to_binary, { 'input': input_string });
                 const output_string = proc.stdout.toString();
-                this.outputs.push(output_string);
                 return output_string
         }
         
