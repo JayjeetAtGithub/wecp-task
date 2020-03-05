@@ -12,5 +12,5 @@ int main() {
     for (int i = 0; i < n; i++) {
         sum += arr[i];
     }
-    cout << sum << "\n";
+    cout << sum;
 }
