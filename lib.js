@@ -8,15 +8,13 @@ class TestCaseGenerator {
                 path_to_input_file,
                 path_to_output_file,
                 input_generator,
-                num_test_cases,
-                constraints) {
+                num_test_cases) {
                 
                 this.path_to_binary = path_to_binary
                 this.path_to_input_file = path_to_input_file
                 this.path_to_output_file = path_to_output_file
                 this.input_generator = input_generator
                 this.num_test_cases = num_test_cases
-                this.constraints = constraints
 
                 fs.closeSync(fs.openSync(this.path_to_input_file, 'w'));
                 fs.closeSync(fs.openSync(this.path_to_output_file, 'w'));
