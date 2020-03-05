@@ -24,7 +24,7 @@ function generate_test_case(lbae, ubae, lbal, ubal) {
 	for (let i = 0; i < arr_len; i++) {
 		arr_elements.push(get_rand(lbae, ubae));
         }
-        test_cases.push({ 'n': arr_len, 'elements': arr_elements });
+        test_cases.push({ 'arr_len': arr_len, 'arr_elements': arr_elements });
 }
 
 // function to run the binary on the input, get the output, write to file
@@ -60,6 +60,6 @@ for (let i = 0; i < num_test_cases; i++) {
 
 // generate the outputs of the corresponding inputs of the test cases
 for (let idx = 0; idx < test_cases.length; idx++) {
-        let input_string = test_cases[idx].n + " " + test_cases[idx].elements.join(" ");
+        let input_string = test_cases[idx].arr_len + " " + test_cases[idx].arr_elements.join(" ");
         run_binary_and_generate_output(input_string, path_to_binary);
 }
