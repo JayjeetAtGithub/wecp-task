@@ -1,4 +1,4 @@
-# test case generator
+# test case generator [EOL]
 
 ## Running instructions
 
